@@ -1,0 +1,23 @@
+#!/bin/sh
+
+#
+# Usage: buzctl enable/disable
+#
+
+buzopen=`find /sys/ -name buzopen`
+buzpath=/usr/local/buzopen
+if [ -e $buzpath ]; then
+    if [ $1 = "enable" ]; then
+	echo 1 > $buzpath
+    else
+	echo 0 > $buzpath
+    fi
+    for file in $buzopen
+    do
+    	cat /usr/local/buzopen > $file
+    done
+    echo "Setting touchscreen buzzer $1"
+else
+    echo "Set buzzer value failed, make sure file($buzpath) existed"
+fi
+

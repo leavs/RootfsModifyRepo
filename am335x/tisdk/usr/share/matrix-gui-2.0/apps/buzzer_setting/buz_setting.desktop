@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Buzzer
+GenericName=Demo App
+Icon=/usr/share/matrix-gui-2.0/apps/images/demo.png
+Type=Application
+Exec=buzzer_setting.sh 
+Categories=demo
+ProgramType=console
+X-MATRIX-Description=/usr/share/matrix-gui-2.0/apps/buzzer_setting/desc_buz_setting.html

@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=Demo
+GenericName=Demos
+Icon=/usr/share/matrix-gui-2.0/apps/images/demo.png
+Type=Directory
+X-MATRIX-CategoryTarget=demo
+X-MATRIX-DisplayPriority=2
+Name[en_US]=demo.desktop
